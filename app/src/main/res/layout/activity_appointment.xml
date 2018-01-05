@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llyt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="35dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_loaction"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约/\nAppointmentk"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We will contact you to arrange the time "
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="84dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="when your reservation is successful"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:layout_marginLeft="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当您预约成功后我们会与您联系以便安排时间"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:layout_marginLeft="50dp"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/bg_oval_corner_graye6eaeb"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:hint="姓名/name"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/colorGray868787"/>
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:background="@drawable/bg_oval_corner_graye6eaeb"
+            android:hint="电话/Telephone number"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/colorGray868787"/>
+
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:background="@drawable/bg_oval_corner_graye222f3a"
+            android:text="提交/Submit"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/ic_back"/>
+    </LinearLayout>
+</LinearLayout>

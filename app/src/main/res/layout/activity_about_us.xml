@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/rlyt_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_about_bg"/>
+
+            <LinearLayout
+                android:id="@+id/llyt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="55dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_trumpet"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关于我们/About us"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llyt_title"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="30dp"
+                android:text="896刺青已有12000多例成功案例、丰富的纹身经验的多年的艺
+术创作功底,不断参加各种纹身大师学术交流会、吸取国内外纹身
+名家的风格特色,时间对艺术的积累和沉淀"
+                android:textColor="@color/colorWhite"
+                android:textSize="11sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title_1"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="15dp"
+                android:text="896 tattoos have more than 12000 successful cases, rich tattoo
+experience of many years of Art Creative skills, participate in
+various academic exchanges of tattoo master, absorb tattoo at
+home and abroadThe style and characteristics of famous artists,
+the accumulation and precipitation of time in art"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="82dp"
+            android:layout_marginRight="82dp"
+            android:layout_below="@+id/rlyt_top"
+            android:layout_marginTop="-13dp"
+            android:background="@drawable/bg_oval_corner_blue"
+            android:gravity="center"
+            android:text="作品展示/Exhibition of works"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rycv_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tv_title">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/ic_back"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_wrap"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

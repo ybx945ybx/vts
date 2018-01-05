@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_login_bg"/>
+
+        <TextView
+            android:id="@+id/tv_logo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="V  T  S"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_logo_title"
+            android:layout_marginLeft="70dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:text="A APP that makes your tattoo come alive"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="and cooler,more meaningful"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="这是一个让你的纹身活过来，更加酷，更加有意义的APP"
+                android:textColor="@color/colorWhite"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_account"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:background="@drawable/bg_oval_corner_graye6eaeb"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:hint="用户名/Username"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="@color/colorGray868787"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:background="@drawable/bg_oval_corner_graye6eaeb"
+        android:hint="密码/Password"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="@color/colorGray868787"/>
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:background="@drawable/bg_oval_corner_graye222f3a"
+        android:text="登陆/SIGN IN"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"/>
+
+</LinearLayout>

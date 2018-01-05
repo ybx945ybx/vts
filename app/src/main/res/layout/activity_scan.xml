@@ -1,0 +1,170 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--可以在程序中根据抽屉菜单 切换Fragment-->
+    <FrameLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_main_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_gravity="bottom"
+            android:background="#4c2b2d33">
+
+
+            <ImageView
+                android:id="@+id/iv_bottom_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32dp"
+                android:padding="15dp"
+                android:src="@mipmap/ic_bottom_left"/>
+
+            <ImageView
+                android:id="@+id/iv_bottom_btn"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="47dp"
+                android:src="@mipmap/ic_bottom_btn"/>
+
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="47dp"
+                android:src="@mipmap/ic_back"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+    <!--左边抽屉菜单-->
+    <FrameLayout
+        android:id="@+id/menu_layout_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/colorGray222F3A">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:text="V  T  S"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tv_about_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:text="关于我们/About us"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tv_course"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="教程/Course"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tv_follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="关注公众号/Follow"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tv_cooperation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="商业合作/\nCooperation"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_clause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="使用条款/\nPrivacy clause"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tv_protocols"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="隐私协议/\nPrivacy protocols"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tv_feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="意见反馈/\nOpinion feedback"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_appointment"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="19dp"
+                android:paddingLeft="15dp"
+                android:background="@color/colorBlue"
+                android:gravity="center_vertical"
+                android:text="预约/\nAppointment"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="84dp">
+
+                <ImageView
+                    android:id="@+id/iv_DrawerLayout_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="47dp"
+                    android:src="@mipmap/ic_back"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</android.support.v4.widget.DrawerLayout>

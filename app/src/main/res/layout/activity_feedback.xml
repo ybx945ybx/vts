@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_about_us_bg"/>
+
+            <LinearLayout
+                android:id="@+id/llyt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="55dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_trumpet"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="意见反馈/\n Opinion feedback"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/colorWhite"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_title_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="85dp"
+                android:text="请留下您宝贵的意见及反馈"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:layout_below="@+id/llyt_title"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Please leave your valuable comments and feedbacks"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:layout_below="@+id/tv_title_1"
+                android:layout_centerHorizontal="true"/>
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_logo_title"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:text="V  T  S"-->
+                <!--android:textColor="@color/colorWhite"-->
+                <!--android:textSize="30sp"/>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/tv_logo_title"-->
+                <!--android:layout_marginLeft="70dp"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="23dp"-->
+                    <!--android:text="A APP that makes your tattoo come alive"-->
+                    <!--android:textColor="@color/colorWhite"-->
+                    <!--android:textSize="12sp"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:text="and cooler,more meaningful"-->
+                    <!--android:textColor="@color/colorWhite"-->
+                    <!--android:textSize="12sp"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:text="这是一个让你的纹身活过来，更加酷，更加有意义的APP"-->
+                    <!--android:textColor="@color/colorWhite"-->
+                    <!--android:textSize="10sp"/>-->
+
+            <!--</LinearLayout>-->
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_oval_corner_graye6eaeb"
+            android:gravity="left|top"
+            android:padding="10dp"
+            android:textColor="@color/colorGray868787"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="42dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/bg_oval_corner_graye222f3a"
+            android:gravity="center"
+            android:text="提交/Submit"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="25dp"
+            android:src="@mipmap/ic_back"/>
+    </LinearLayout>
+
+</LinearLayout>
